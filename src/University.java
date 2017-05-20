@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 // используем паттерн синглтон, так как в рамках ТЗ не желательна возможность создания нескольких объектов этого класса
 public class University {
-    final static int GROUPSQUANTITY = 5;// количество групп - 5, по умолчанию
+    final static int COUNTOFGROUPS = 5;// количество групп - 5, по умолчанию
     private static University instance = null;
     private static ArrayList<Group> groups = new ArrayList<Group>();//университет состоит из групп
     private static ArrayList<Professor> professors = new ArrayList<Professor>();//и преподователей
@@ -13,7 +13,7 @@ public class University {
 
     // в статическом блоке при создании экземпляра сразу инициализируем группы студентов и профессоров
     static {
-        for (int i = 0; i < GROUPSQUANTITY; i++){
+        for (int i = 0; i < COUNTOFGROUPS; i++){
             groups.add(new Group(i));
         }
         professors.add(new Professor ("Ivanov", "Mathematics"));
