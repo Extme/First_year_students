@@ -5,7 +5,7 @@ public class University {
     final static int COUNTOFGROUPS = 5;// количество групп - 5, по умолчанию
     private static University instance = null;
     private static ArrayList<Group> groups = new ArrayList<Group>();//университет состоит из групп
-    private static ArrayList<Professor> professors = new ArrayList<Professor>();//и преподователей
+    private static ArrayList<Professor> professors = new ArrayList<Professor>();//и преподавателей
 
     // приватный конструктор для реализации паттерна
     private University(){
