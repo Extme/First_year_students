@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-// Используем паттерн синглтон, так как в рамках ТЗ нежелательна возможность создания нескольких объектов этого класса
+// Используем паттерн "Singleton", так как в рамках ТЗ нежелательна возможность создания нескольких объектов этого класса
 public class University {
     final static int COUNTOFGROUPS = 5;// количество групп - 5, по умолчанию
     private static University instance = null;
